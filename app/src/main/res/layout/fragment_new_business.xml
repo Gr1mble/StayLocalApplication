@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.businessAccounts.NewBusinessFragment">
+
+    <LinearLayout
+        android:id="@+id/buttonsShelf"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- Home Button -->
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/home_icon"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/eventButton2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/event_icon"
+            tools:ignore="ContentDescription" />
+
+        <!-- Profile Button -->
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/logout"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBusiness"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/business_icon_dark" />
+
+        <Button
+            android:id="@+id/button_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Upload File "
+            app:layout_constraintEnd_toEndOf="@+id/imgBusiness"
+            app:layout_constraintStart_toStartOf="@+id/imgBusiness"
+            app:layout_constraintTop_toBottomOf="@+id/imgBusiness" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editText_business_name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="Enter Business Name"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <EditText
+        android:id="@+id/editText_address"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="textPostalAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_business_name"
+        app:layout_constraintStart_toStartOf="@+id/editText_business_name"
+        app:layout_constraintTop_toBottomOf="@+id/editText_business_name" />
+
+    <EditText
+        android:id="@+id/editText_phone_number"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_address"
+        app:layout_constraintStart_toStartOf="@+id/editText_address"
+        app:layout_constraintTop_toBottomOf="@+id/editText_address" />
+
+    <EditText
+        android:id="@+id/editText_open"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="Open"
+        android:inputType="phone"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintStart_toStartOf="@+id/editText_phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/editText_phone_number" />
+
+    <EditText
+        android:id="@+id/editText_close"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:ems="10"
+        android:hint="Close"
+        android:inputType="phone"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/editText_phone_number" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsShelf"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_close"
+        app:layout_constraintEnd_toStartOf="@+id/editText_close"
+        app:layout_constraintStart_toEndOf="@+id/editText_open"
+        app:layout_constraintTop_toTopOf="@+id/editText_close" />
+
+    <Button
+        android:id="@+id/button_selectOpen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Select Time"
+        app:layout_constraintEnd_toEndOf="@+id/editText_open"
+        app:layout_constraintStart_toStartOf="@+id/editText_open"
+        app:layout_constraintTop_toBottomOf="@+id/editText_open" />
+
+    <Button
+        android:id="@+id/button_selectClose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Select Time"
+        app:layout_constraintEnd_toEndOf="@+id/editText_close"
+        app:layout_constraintStart_toStartOf="@+id/editText_close"
+        app:layout_constraintTop_toBottomOf="@+id/editText_close" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

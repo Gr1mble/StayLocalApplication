@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624582424874",
+    "project_id": "staylocal-60d97",
+    "storage_bucket": "staylocal-60d97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624582424874:android:d7883a0db27c7ff9238653",
+        "android_client_info": {
+          "package_name": "com.example.staylocal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn7jvU75WiWXDIYRaBU9y3pD0mEGAGPF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

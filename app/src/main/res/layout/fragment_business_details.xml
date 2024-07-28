@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99CCED"
+    tools:context=".fragments.BusinessDetailsFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageCardView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="18dp"
+        android:paddingTop="20dp"
+        app:cardBackgroundColor="#6750A4"
+        app:cardCornerRadius="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/businessBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039">
+
+        <ImageView
+            android:id="@+id/businessPicture2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/business_icon"
+            app:srcCompat="@drawable/business_icon"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/businessBackground"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:background="@drawable/business_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/baseline_chevron_left_24" />
+
+    <TextView
+        android:id="@+id/foodTruckTag2"
+        android:layout_width="262dp"
+        android:layout_height="44dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/businessName2"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/businessName2"
+        app:layout_constraintTop_toTopOf="@+id/img_business_review" />
+
+    <ImageView
+        android:id="@+id/img_business_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/review_ribbon_large_0"
+        app:layout_constraintEnd_toEndOf="@+id/businessName2"
+        app:layout_constraintStart_toStartOf="@+id/businessName2"
+        app:layout_constraintTop_toBottomOf="@+id/businessName2" />
+
+    <TextView
+        android:id="@+id/business_price"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="business_price"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodTruckTag2" />
+
+    <TextView
+        android:id="@+id/business_address"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="business_address"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/business_phone" />
+
+    <TextView
+        android:id="@+id/business_hours"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="business_hours"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/business_address" />
+
+    <TextView
+        android:id="@+id/business_phone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="business_phone"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/business_price" />
+
+    <TextView
+        android:id="@+id/businessName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="business_name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/businessBackground"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/businessBackground"
+        app:layout_constraintTop_toTopOf="@+id/businessBackground" />
+
+    <Button
+        android:id="@+id/button_reviews"
+        android:layout_width="168dp"
+        android:layout_height="47dp"
+        android:text="Reviews"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/businessBackground"
+        app:layout_constraintEnd_toEndOf="@+id/businessBackground"
+        app:layout_constraintStart_toStartOf="@+id/businessBackground" />
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:src="@drawable/phone_icon"
+        app:layout_constraintEnd_toStartOf="@+id/business_phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyIcon" />
+
+    <ImageView
+        android:id="@+id/moneyIcon"
+        android:layout_width="45dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/money_icon"
+        app:layout_constraintEnd_toStartOf="@+id/business_price"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodTruckTag2" />
+
+    <ImageView
+        android:id="@+id/pinIcon"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:src="@drawable/mappin_icon"
+        app:layout_constraintEnd_toStartOf="@+id/business_address"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneIcon" />
+
+    <ImageView
+        android:id="@+id/timeIcon"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:src="@drawable/time_icon"
+        app:layout_constraintBottom_toTopOf="@+id/button_reviews"
+
+        app:layout_constraintEnd_toStartOf="@+id/business_hours"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinIcon"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
